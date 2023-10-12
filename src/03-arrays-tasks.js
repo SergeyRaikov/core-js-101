@@ -238,9 +238,13 @@ function toCsvText(/* arr */) {
  *   [ 0, 1, 2, 3, 4, 5 ] => [ 0, 1, 4, 9, 16, 25 ]
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
-function toArrayOfSquares(/* arr */) {
-  throw new Error('Not implemented');
+function toArrayOfSquares(arr) {
+  const newArr = arr.map((elem) => elem ** 2);
+  return newArr;
+
+  // throw new Error('Not implemented');
 }
+
 
 /**
  * Transforms the numeric array to the according moving sum array:
