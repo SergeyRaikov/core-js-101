@@ -361,24 +361,24 @@ function getDigitalRoot(num) {
  *   '{)' = false
  *   '{[(<{[]}>)]}' = true
  */
-function isBracketsBalanced(str) {
-  const opendBrackets = ['[', '(', '{', '<'];
-  const closedBrackets = [']', ')', '}', '>'];
-  const steck = [];
-  // if (str === '') return true;
-  for (let i = 0; i < str.length; i++) {
-    const indexOpened = opendBrackets.indexOf(str[i]);
-    const indexClosed = closedBrackets.indexOf(str[i]);
-    if (indexOpened !== -1) {
-      steck.push(str[i]);
-      console.log(steck);
-    }
-    if (indexClosed !== -1) {
-      steck.pop();
-    }
-  }
+function isBracketsBalanced(/* str */) {
+  throw new Error('Not implemented');
+  // const opendBrackets = ['[', '(', '{', '<'];
+  // const closedBrackets = [']', ')', '}', '>'];
+  // const steck = [];
+  // // if (str === '') return true;
+  // for (let i = 0; i < str.length; i++) {
+  //   const indexOpened = opendBrackets.indexOf(str[i]);
+  //   const indexClosed = closedBrackets.indexOf(str[i]);
+  //   if (indexOpened !== -1) {
+  //     steck.push(str[i]);
+  //     console.log(steck);
+  //   }
+  //   if (indexClosed !== -1) {
+  //     steck.pop();
+  //   }
+  // }
 }
-console.log(isBracketsBalanced(']['));
 
 /**
  * Returns the string with n-ary (binary, ternary, etc, where n <= 10)
