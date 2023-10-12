@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 /* *******************************************************************************************
- *                                                                                           *
+ *                                                                                            *
  * Please read the following tutorial before implementing tasks:                              *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates           *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number   *
@@ -51,9 +51,8 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(value1, value2) {
-  const average = (value1 + value2) / 2;
-  return average;
+function getAverage(/* value1, value2 */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -159,8 +158,8 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelepipedDiagonal(a, b, c) {
-  const diagonal = Math.hypot(a, b, c);
-  return diagonal;
+  const sqrtSum = a ** 2 + b ** 2 + c ** 2;
+  return Math.sqrt(sqrtSum);
 }
 
 /**

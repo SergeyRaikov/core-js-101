@@ -377,7 +377,6 @@ function isBracketsBalanced(str) {
       steck.pop();
     }
   }
-  
 }
 console.log(isBracketsBalanced(']['));
 
